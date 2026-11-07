@@ -1,0 +1,45 @@
+import type { Port } from './Port.ts';
+
+export const PORTS: readonly Port[] = ([
+  { code: 'BRTUB', name: 'Tubarao', country: 'Brazil', latitude: -20.29, longitude: -40.24, maxDraft: 23.0, turnaround: 16 },
+  { code: 'BRVIX', name: 'Vitoria', country: 'Brazil', latitude: -20.32, longitude: -40.32, maxDraft: 12.5, turnaround: 20 },
+  { code: 'AUPHE', name: 'Port Hedland', country: 'Australia', latitude: -20.31, longitude: 118.57, maxDraft: 19.8, turnaround: 20 },
+  { code: 'BRSSZ', name: 'Santos', country: 'Brazil', latitude: -23.95, longitude: -46.33, maxDraft: 15.0, turnaround: 20 },
+  { code: 'USMSY', name: 'New Orleans (Mississippi River)', country: 'United States', latitude: 29.95, longitude: -90.07, maxDraft: 15.2, turnaround: 24 },
+  { code: 'USHOU', name: 'Houston', country: 'United States', latitude: 29.73, longitude: -95.27, maxDraft: 13.7, turnaround: 24 },
+  { code: 'SARTA', name: 'Ras Tanura', country: 'Saudi Arabia', latitude: 26.64, longitude: 50.16, maxDraft: 21.0, turnaround: 16 },
+  { code: 'ZARCB', name: 'Richards Bay', country: 'South Africa', latitude: -28.79, longitude: 32.04, maxDraft: 17.5, turnaround: 18 },
+  { code: 'CNQDG', name: 'Qingdao', country: 'China', latitude: 36.06, longitude: 120.32, maxDraft: 24.0, turnaround: 18 },
+  { code: 'CNNGB', name: 'Ningbo-Zhoushan', country: 'China', latitude: 29.9, longitude: 121.88, maxDraft: 23.5, turnaround: 20 },
+  { code: 'NLRTM', name: 'Rotterdam', country: 'Netherlands', latitude: 51.92, longitude: 4.48, maxDraft: 20.0, turnaround: 18 },
+  { code: 'BEANR', name: 'Antwerp', country: 'Belgium', latitude: 51.22, longitude: 4.4, maxDraft: 16.0, turnaround: 24 },
+  { code: 'DEHAM', name: 'Hamburg', country: 'Germany', latitude: 53.55, longitude: 9.99, maxDraft: 17.0, turnaround: 24 },
+  { code: 'GRPIR', name: 'Piraeus', country: 'Greece', latitude: 37.94, longitude: 23.64, maxDraft: 18.0, turnaround: 16 },
+  { code: 'SGSIN', name: 'Singapore', country: 'Singapore', latitude: 1.29, longitude: 103.85, maxDraft: 21.0, turnaround: 18 },
+  { code: 'AEFJR', name: 'Fujairah', country: 'United Arab Emirates', latitude: 25.16, longitude: 56.37, maxDraft: 18.0, turnaround: 16 },
+  { code: 'GIGIB', name: 'Gibraltar', country: 'Gibraltar (UK)', latitude: 36.14, longitude: -5.35, maxDraft: 9.6, turnaround: 16 },
+  { code: 'USNYC', name: 'New York / New Jersey', country: 'United States', latitude: 40.71, longitude: -74.0, maxDraft: 15.2, turnaround: 20 },
+  { code: 'JPCHB', name: 'Chiba / Tokyo Bay', country: 'Japan', latitude: 35.6, longitude: 140.1, maxDraft: 18.0, turnaround: 20 },
+  { code: 'INMUN', name: 'Mundra', country: 'India', latitude: 22.83, longitude: 69.7, maxDraft: 19.0, turnaround: 16 },
+  { code: 'EGPSD', name: 'Port Said (Suez North)', country: 'Egypt', latitude: 31.26, longitude: 32.3, maxDraft: 17.0, turnaround: 18 },
+  { code: 'PABLB', name: 'Balboa / Panama City', country: 'Panama', latitude: 8.95, longitude: -79.57, maxDraft: 15.7, turnaround: 18 },
+  { code: 'AUNTL', name: 'Newcastle', country: 'Australia', latitude: -32.92, longitude: 151.79, maxDraft: 16.2, turnaround: 18 },
+  { code: 'AUDAM', name: 'Dampier', country: 'Australia', latitude: -20.63, longitude: 116.71, maxDraft: 18.8, turnaround: 18 },
+  { code: 'ZASDB', name: 'Saldanha Bay', country: 'South Africa', latitude: -33.03, longitude: 17.95, maxDraft: 21.25, turnaround: 16 },
+  { code: 'QARLF', name: 'Ras Laffan', country: 'Qatar', latitude: 25.9, longitude: 51.61, maxDraft: 15.0, turnaround: 16 },
+  { code: 'CNSHA', name: 'Shanghai', country: 'China', latitude: 31.23, longitude: 121.5, maxDraft: 12.5, turnaround: 20 },
+  { code: 'KRPUS', name: 'Busan', country: 'South Korea', latitude: 35.1, longitude: 129.04, maxDraft: 16.0, turnaround: 18 },
+  { code: 'USLAX', name: 'Los Angeles', country: 'United States', latitude: 33.73, longitude: -118.26, maxDraft: 16.0, turnaround: 18 },
+  { code: 'USLGB', name: 'Long Beach', country: 'United States', latitude: 33.75, longitude: -118.2, maxDraft: 16.8, turnaround: 18 },
+  { code: 'USCRP', name: 'Corpus Christi', country: 'United States', latitude: 27.81, longitude: -97.4, maxDraft: 14.3, turnaround: 20 },
+  { code: 'GBFXT', name: 'Felixstowe', country: 'United Kingdom', latitude: 51.96, longitude: 1.31, maxDraft: 18.0, turnaround: 18 },
+  { code: 'AEJEA', name: 'Jebel Ali', country: 'United Arab Emirates', latitude: 25.01, longitude: 55.06, maxDraft: 17.0, turnaround: 18 },
+  { code: 'LKCMB', name: 'Colombo', country: 'Sri Lanka', latitude: 6.95, longitude: 79.84, maxDraft: 18.0, turnaround: 16 },
+  { code: 'BRPNG', name: 'Paranagua', country: 'Brazil', latitude: -25.51, longitude: -48.52, maxDraft: 13.0, turnaround: 20 },
+  { code: 'ROCND', name: 'Constanta', country: 'Romania', latitude: 44.17, longitude: 28.66, maxDraft: 19.0, turnaround: 16 },
+  { code: 'SAYNB', name: 'Yanbu', country: 'Saudi Arabia', latitude: 24.07, longitude: 38.05, maxDraft: 14.0, turnaround: 16 },
+] satisfies Port[]).sort((first, second) => first.name.localeCompare(second.name));
+
+export function findPort(code: string): Port | null {
+  return PORTS.find((port) => port.code === code) ?? null;
+}

@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@config "../tailwind.config.ts";
+
+/* The theme. The colours are in src/shared/ui/palette.ts. */
+@theme {
+  /* --- Type scale. The one small size the interface adds to the defaults. --- */
+  --text-note: 0.6875rem; /* 11px: field labels and explanatory sentences */
+  --text-note--line-height: 1.45;
+
+  /*
+   * --- Radius. Bound to the depth of the box, not chosen per component. ---
+   * A board contains panels, a panel contains controls. One step in, one step
+   * smaller, so the nesting reads correctly at any size.
+   */
+  --radius-board: 1rem; /* the outer box on the page */
+  --radius-panel: 0.75rem; /* a well or a banner inside a board */
+  --radius-control: 0.375rem; /* an input, a button, a tab */
+
+  /* --- Dimension. The one control height, so a read-only value lines up
+         with an editable field in the same grid. --- */
+  --spacing-control: 1.875rem;
+
+  /* --- Elevation. The soft shadow that lifts a navy box off the white page. --- */
+  --shadow-soft: 0 1rem 3rem rgb(7 27 51 / 0.12);
+}
